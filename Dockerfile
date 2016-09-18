@@ -10,7 +10,7 @@ RUN tar -xvzf node-v6.6.0-linux-armv6l.tar.gz
 RUN rm node-v6.6.0-linux-armv6l.tar.gz
 RUN mv node-v6.6.0-linux-armv6l opt/node
 
-RUN ENV PATH $PATH:/opt/node/bin
+ENV PATH $PATH:/opt/node/bin
 
 RUN node -v
 
