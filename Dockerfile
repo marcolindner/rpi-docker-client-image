@@ -14,7 +14,7 @@ RUN apt-get install -y curl;
 #RUN apt-get remove nodejs nodejs-legacy -y
 #RUN apt-get remove npm -y
 
-RUN curl -sL https://deb.nodesource.com/setup_5.x | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
 RUN apt-get install -y nodejs
 
 RUN node -v
