@@ -2,7 +2,7 @@ FROM resin/rpi-raspbian:jessie
 ENV PATH /opt/node:$PATH
 RUN apt-get upgrade; 
 RUN apt-get update;
-RUN apt-get install -y curl;
+RUN apt-get install -y wget;
 
 # Install NodeJs for Raspberry Pi 2
 RUN wget http://nodejs.org/dist/latest-v4.x/node-v4.4.0-linux-armv7l.tar.gz
