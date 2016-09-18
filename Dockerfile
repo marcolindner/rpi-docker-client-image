@@ -9,7 +9,7 @@ RUN apt-get install -y wget;
 RUN wget https://nodejs.org/dist/v6.6.0/node-v6.6.0-linux-armv6l.tar.gz
 RUN tar -xvzf node-v6.6.0-linux-armv6l.tar.gz
 RUN rm node-v6.6.0-linux-armv6l.tar.gz
-RUN mv node-v6.6.0-linux-armv6l.tar.gz opt/node
+RUN mv node-v6.6.0-linux-armv6l opt/node
 
 RUN node -v
 
