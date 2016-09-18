@@ -1,0 +1,1 @@
+copy node_modules/bootstrap/dist/css/bootstrap.min.css dist/css && copy src/app.js dist/ && copy src/index.html dist/;

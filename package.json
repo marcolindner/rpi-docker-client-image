@@ -4,7 +4,9 @@
   "description": "Docker Image for Raspi - Clientside",
   "main": "app.js",
   "scripts": {
-    "test": "karma"
+    "start": "node dist/app.js",
+    "clean": "rm -rf dist",
+    "prestart": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css && cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js && cp src/app.js dist && cp src/index.html dist"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,8 @@
     "url": "https://github.com/marcolindner/rpi-docker-client-image/issues"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "copy": "^0.3.0",
     "express": "^4.14.0"
   }
 }
