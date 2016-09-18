@@ -14,8 +14,11 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 
+#Build app
+RUN npm run build
+
 # Bundle app source
-COPY src/app.js /usr/src/app/
+COPY dist/* /usr/src/app/
 
 EXPOSE 8080
 CMD [ "npm", "start" ]

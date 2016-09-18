@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/app.js",
     "clean": "rm -rf dist",
-    "prestart": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css && cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js && cp src/app.js dist && cp src/index.html dist"
+    "build": "cp node_modules/bootstrap/dist/css/bootstrap.min.css dist/css && cp node_modules/bootstrap/dist/js/bootstrap.min.js dist/js && cp src/app.js dist && cp src/index.html dist"
   },
   "repository": {
     "type": "git",
