@@ -3,9 +3,12 @@ ENV PATH /opt/node:$PATH
 RUN apt-get upgrade; 
 RUN apt-get update;
 RUN apt-get install -y curl;
-RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-RUN apt-get install -y nodejs;
 
+# Install NodeJs for Raspberry Pi 2
+RUN wget http://nodejs.org/dist/latest-v4.x/node-v4.4.0-linux-armv7l.tar.gz
+RUN tar -xvf node-v4.4.0-linux-armv7l.tar.gz
+RUN cd node-v4.4.0-linux-armv7l
+RUN cp -R * /usr/local/
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
