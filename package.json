@@ -1,0 +1,21 @@
+{
+  "name": "rpi-docker-client-image",
+  "version": "1.0.0",
+  "description": "Docker Image for Raspi - Clientside",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcolindner/rpi-docker-client-image.git"
+  },
+  "author": "Marco Lindner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcolindner/rpi-docker-client-image/issues"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
