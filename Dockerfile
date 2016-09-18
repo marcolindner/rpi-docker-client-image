@@ -8,7 +8,7 @@ RUN apt-get install -y wget;
 RUN wget http://nodejs.org/dist/latest-v4.x/node-v4.5.0-linux-armv6l.tar.gz         
 RUN tar -xvf node-v4.5.0-linux-armv6l.tar.gz
 RUN cd node-v4.5.0-linux-armv6l
-RUN sudo cp -R * /usr/local/
+RUN sudo cp -avr * /usr/local/
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
